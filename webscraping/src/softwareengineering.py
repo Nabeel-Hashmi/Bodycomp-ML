@@ -207,7 +207,7 @@ def process_folder(
 # ── CLI ──────────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Crop torso region from waist-up male photos")
-    parser.add_argument("--input",      default="./data/raw/",       help="Folder of input images")
+    parser.add_argument("--input",      default="./data/raw/raw_new",       help="Folder of input images")
     parser.add_argument("--output",     default="./data/processed/", help="Folder for cropped outputs")
     parser.add_argument("--size",       type=int,   default=224,  help="Output square size (default 224)")
     parser.add_argument("--pad-top",    type=float, default=0.08)
